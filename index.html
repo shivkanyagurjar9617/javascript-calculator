@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>javascript-calculator</title>
+</head>
+<body>
+    <script>
+        function myFunction(){
+            var x = parseInt(document.getElementById('number').value);
+            var y =parseInt (document.getElementById('numbers').value);
+            document.getElementById('result').innerHTML =x+y
+            //console.log(x)
+        }
+         function myFunction1(){
+            var x = parseInt(document.getElementById('number').value);
+            var y = parseInt(document.getElementById('numbers').value);
+            document.getElementById('result').innerHTML =x-y
+            //console.log(x)
+        } 
+        function myFunction2(){
+            var x = parseInt(document.getElementById('number').value);
+            var y = parseInt(document.getElementById('numbers').value);
+            document.getElementById('result').innerHTML =x/y
+            //console.log(x)
+        } 
+        function myFunction3(){
+            var x = parseInt(document.getElementById('number').value);
+            var y = parseInt(document.getElementById('numbers').value);
+            document.getElementById('result').innerHTML =x*y
+          
+        } 
+
+    </script>
+        <br>
+    1st number:
+    <input type="number" value="" id="number"><br>
+    <br>
+    2nd number:
+    <input type="number" value="" id="numbers"><br>
+    <br>
+   <button onClick =" myFunction()">plus</button>
+   <button onClick =" myFunction1()">minus</button>
+   <button onClick =" myFunction2()">divide</button>
+   <button onClick =" myFunction3()">multi</button>
+   <br>
+   <br>
+   <h5>result</h5>
+    <h1 id="result">0</h1> 
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
